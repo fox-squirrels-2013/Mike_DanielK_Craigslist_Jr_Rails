@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20131118200037) do
     t.string   "description"
     t.string   "price"
     t.string   "email"
+    t.string   "edit_key"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

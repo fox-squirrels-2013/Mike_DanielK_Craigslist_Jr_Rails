@@ -19,6 +19,11 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find_by_id(params[:id])
+    if params[:key] == @post.edit_key
+      render 'edit'
+    else
+      redirect_to '/'
+    end
   end
 
   def update
