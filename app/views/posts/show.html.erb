@@ -1,4 +1,4 @@
 <h3><%= "#{@post.title} - #{@post.price}" %></h3>
 <%= @post.description %><br><br>
-<%= mail_to "Contact vendor", @post.email, :subject => @post.title %>
+<%= mail_to @post.email, "Contact vendor", :subject => @post.title %>
 
