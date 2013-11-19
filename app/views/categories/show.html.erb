@@ -1,0 +1,11 @@
+<h2><%= @category.name %></h2>
+
+<% if @posts %>
+  <ul class="home_list">
+  <% @posts.each do |post| %>
+    <%= link_to(post, :class => "link") do %>
+      <li><%= "#{post.title} - #{post.price}" %></li>
+    <% end %>
+  <% end %>
+  </ul>
+<% end %>

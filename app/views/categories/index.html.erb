@@ -1,5 +1,7 @@
-<ul>
+<ul class="home_list">
 <% @categories.each do |category| %>
-  <li><%= category.name %></li>
+  <%= link_to(category, :class => "link") do %>
+    <li><%= category.name %></li>
+  <% end %>
 <% end %>
 </ul>

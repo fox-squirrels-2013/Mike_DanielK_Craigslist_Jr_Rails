@@ -7,8 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <h1 id="company_name"><%= link_to "Mr. C-Dubs' List of Wonders", '/', :class => "link" %></h1>
+<%= yield %>                                                            <!-- adding :class allows you to put styling on the link text -->
 
 </body>
 </html>
