@@ -9,9 +9,8 @@
 <body>
   <h1 id="company_name"><%= link_to "Mr. C-Dubs' List of Wonders", '/', :class => "link" %></h1>
                                                                   <!-- adding :class allows you to put styling on the link text -->
-  <nav>
-
-  </nav>
+  <h3 id="tagline">A place where class, begets class</h3>
+  <nav id="global_nav"><%= link_to "New Post", new_post_path, :class => "link" %></nav>
 <%= yield %>
 
 </body>

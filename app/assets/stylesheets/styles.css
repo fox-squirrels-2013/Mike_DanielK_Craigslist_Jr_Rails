@@ -1,6 +1,22 @@
 #company_name {
   background-color: yellow;
   padding: 10px;
+  padding-bottom: 30px;
+}
+
+#tagline {
+  color: blue;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  font-style: italic;
+}
+
+#global_nav {
+  position: relative;
+  bottom: 70px;
+  right: 15px;
+  float: right;
 }
 
 .link {
@@ -15,4 +31,17 @@
 .home_list {
   list-style: none;
   padding-left: 15px;
+}
+
+.link_to_button {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 15px;
+}
+
+.link_to_button:hover{
+  background-color: black;
+  color: red;
 }

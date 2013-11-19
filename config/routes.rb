@@ -1,7 +1,7 @@
 ClJr::Application.routes.draw do
   root :to => 'categories#index'
   resources :categories, :only => [:show, :index]
-  resources :posts, :only => [:new, :create, :show]
+  resources :posts, :except => [:index]
 end
 
 
